@@ -10,6 +10,7 @@
 
   --clr-grey-100: 214 17% 92%;
   --clr-grey-200: 0 0% 81%;
+  --clr-grey-300: 215 10% 67%;
   --clr-grey-400: 224 10% 45%;
   --clr-grey-500: 217 19% 35%;
 
@@ -83,26 +84,74 @@ p {
   display: grid;
   row-gap: 1rem;
   padding: 2rem;
-
   border-radius: 0.5rem;
+
+  box-shadow: 40px 60px 50px -47px hsla(217, 19%, 35%, 24.74%);
+
+  background-color: var(--testimonial-bg);
+}
+
+.author-profile-img {
+  box-shadow: 0 0 0 2px var(--img-border-clr);
+}
+.author-name {
+  color: var(--author-name-clr);
+}
+.author-status {
+  color: var(--author-status-clr);
+}
+
+.testimonial-highlight {
+  color: var(--testimonial-highlight-clr);
+}
+.testimonial-detail {
+  color: var(--testimonial-detail-clr);
 }
 
 .testimonial-card:nth-of-type(1) {
-  background-color: hsl(var(--clr-purple-500));
+  --testimonial-bg: hsl(var(--clr-purple-500));
+  --testimonial-highlight-clr: hsl(var(--clr-white));
+  --testimonial-detail-clr: hsl(var(--clr-purple-50));
+
+  --author-name-clr: hsl(var(--clr-white));
+  --author-status-clr: hsl(var(--clr-purple-50));
+  --img-border-clr: hsl(264, 82%, 70%);
 }
+
 .testimonial-card:nth-of-type(2) {
-  background-color: hsl(var(--clr-grey-500));
+  --testimonial-bg: hsl(var(--clr-grey-500));
+  --testimonial-highlight-clr: hsl(var(--clr-white));
+  --testimonial-detail-clr: hsl(var(--clr-grey-100));
+
+  --author-name-clr: hsl(var(--clr-white));
+  --author-status-clr: hsl(var(--clr-grey-300));
 }
 .testimonial-card:nth-of-type(3) {
-  background-color: hsl(var(--clr-white));
+  --testimonial-bg: hsl(var(--clr-white));
+  --testimonial-highlight-clr: hsl(var(--clr-grey-500));
+  --testimonial-detail-clr: hsl(var(--clr-grey-400));
+
+  --author-name-clr: hsl(var(--clr-grey-500));
+  --author-status-clr: hsl(var(--clr-grey-400));
 }
 
 .testimonial-card:nth-of-type(4) {
-  background-color: hsl(var(--clr-dark-blue));
+  --testimonial-bg: hsl(var(--clr-dark-blue));
+  --testimonial-highlight-clr: hsl(var(--clr-grey-200));
+  --testimonial-detail-clr: hsl(var(--clr-grey-100));
+
+  --author-name-clr: hsl(var(--clr-white));
+  --author-status-clr: hsl(var(--clr-white));
+  --img-border-clr: hsl(var(--clr-purple-500));
 }
 
 .testimonial-card:nth-of-type(5) {
-  background-color: hsl(var(--clr-white));
+  --testimonial-bg: hsl(var(--clr-white));
+  --testimonial-highlight-clr: hsl(var(--clr-grey-500));
+  --testimonial-detail-clr: hsl(var(--clr-grey-400));
+
+  --author-name-clr: hsl(var(--clr-grey-500));
+  --author-status-clr: hsl(var(--clr-grey-300));
 }
 
 /* [1] card's children */
@@ -118,7 +167,6 @@ figure {
 }
 
 figure img {
-  box-shadow: 0 0 0 2px white;
   border-radius: 50%;
   height: 28px;
   width: 28px;
