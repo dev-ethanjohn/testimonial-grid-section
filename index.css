@@ -1,0 +1,27 @@
+/*=======================
+ * CUSTOM PROPERTIES
+ *========================**/
+
+:root {
+  /*colors */
+  --clr-black: 0 0% 7%;
+  --clr-dark-blue: 219 29% 14%;
+  --clr-white: 0 0% 100%;
+
+  --clr-grey-100: 214 17% 92%;
+  --clr-grey-200: 0 0% 81%;
+  --clr-grey-400: 224 10% 45%;
+  --clr-grey-500: 217 19% 35%;
+
+  --clr-purple-50: 260 100% 95%;
+  --clr-purple-300: 264 82% 70%;
+  --clr-purple-500: 263 55% 52%;
+
+  /* font-family */
+  --ff-sans-semi-cond: "Barlow Semi Condensed", sans-serif;
+
+  /* font size */
+  --fs-500: 1.25rem; /*20px*/
+  --fs-200: 0.8125rem; /*13px*/
+  --fs-100: 0.6875rem; /*11px*/
+}
