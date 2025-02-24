@@ -25,3 +25,45 @@
   --fs-200: 0.8125rem; /*13px*/
   --fs-100: 0.6875rem; /*11px*/
 }
+
+/*=======================
+ * RESET
+ * ref: https://www.joshwcomeau.com/css/custom-css-reset/
+ *========================**/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-sans-semi-cond);
+  font-size: var(--fs-200);
+  color: hsl(var(--clr-grey-400));
+  font-weight: 500;
+
+  /* improve text rendering on mac */
+  -webkit-font-smoothing: antialiased;
+
+  background-color: hsl(300, 5%, 96%);
+  line-height: 1.4;
+}
+
+img {
+  /* https://www.youtube.com/watch?v=345V2MU3E_w */
+  font-style: italic;
+
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  overflow-wrap: break-word;
+}
