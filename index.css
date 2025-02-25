@@ -225,6 +225,18 @@ blockquote {
 
   .testimonial-card:first-of-type {
     grid-column: 1 / 3;
+    position: relative;
+    /* https://www.youtube.com/watch?v=o1HzOJfgugE */
+    isolation: isolate;
+    /* z-index: 1; */
+  }
+
+  .open-quote {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 3rem;
+    color: hsl(var(--clr-purple-300));
   }
 
   .testimonial-card:nth-of-type(2) {
