@@ -92,6 +92,10 @@ p {
   align-items: start;
 }
 
+.open-quote {
+  display: none;
+}
+
 .author-profile-img {
   box-shadow: 0 0 0 2px var(--img-border-clr);
 }
@@ -232,6 +236,7 @@ blockquote {
   }
 
   .open-quote {
+    display: block;
     position: absolute;
     z-index: -1;
     top: 0;
